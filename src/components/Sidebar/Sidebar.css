@@ -1,0 +1,11 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 16px;
+    width: 256px;
+    background-color: transparent;
+    user-select: none;
+    height: 100%;
+    overflow-y: scroll;
+}
