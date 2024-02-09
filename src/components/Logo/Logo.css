@@ -1,0 +1,17 @@
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo-Image {
+    height: 64px;
+    width: 64px;
+    margin: 16px;
+    will-change: filter;
+    transition: filter 300ms;
+    user-select: none;
+}
+
+.Logo-Image:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}

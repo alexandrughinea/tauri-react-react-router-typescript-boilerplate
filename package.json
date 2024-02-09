@@ -1,0 +1,52 @@
+{
+    "name": "tauri-react-react-router-typescript-boilerplate",
+    "author": {
+        "name": "Alex",
+        "email": "alexandrughinea.dev@gmail.com"
+    },
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "dev:tauri": "npx tauri dev",
+        "build": "tsc && vite build",
+        "build:tauri": "npx tauri buld",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "format": "prettier --check --write './src/**/*.{ts,tsx,scss,md,json}'",
+        "preview": "vite preview",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@tanstack/react-query": "^5.20.5",
+        "@tauri-apps/api": "^1.5.3",
+        "@tauri-apps/cli": "^1.5.9",
+        "classnames": "^2.5.1",
+        "lodash": "^4.17.21",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router": "^6.21.3",
+        "react-router-dom": "^6.21.3",
+        "tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store#v1"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.202",
+        "@types/node": "^20.11.17",
+        "@types/react": "^18.2.55",
+        "@types/react-dom": "^18.2.19",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "eslint": "^8.56.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.5",
+        "husky": "^9.0.10",
+        "lint-staged": "^15.2.2",
+        "prettier": "3.2.5",
+        "typescript": "^5.2.2",
+        "vite": "^5.1.0"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    }
+}
