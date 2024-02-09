@@ -1,0 +1,23 @@
+.PublicLayout {
+    display: flex;
+    width: inherit;
+    height: inherit;
+}
+
+.PublicLayout.Native {
+    margin-top: 30px;
+    height: calc(100% - 30px) !important;
+}
+
+.PublicLayout-Content {
+    overflow: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0) 100%
+    );
+    border-radius: 8px;
+    margin: 16px;
+}

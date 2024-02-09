@@ -1,0 +1,26 @@
+.Titlebar {
+    height: 30px;
+    user-select: none;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Titlebar-Button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    user-select: none;
+    cursor: default;
+    border-radius: 50%;
+}
+
+.Titlebar-Button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
