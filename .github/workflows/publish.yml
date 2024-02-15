@@ -76,7 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           releaseId: ${{ needs.create-release.outputs.release_id }}
-    publish-release:
+  publish-release:
       permissions:
         contents: write
       runs-on: ubuntu-20.04
