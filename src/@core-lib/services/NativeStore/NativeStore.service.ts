@@ -1,13 +1,13 @@
 import { Store } from 'tauri-plugin-store-api'
 
 export class NativeStoreService {
-    readonly store = Store
+    readonly store: Store
 
     constructor() {
         this.store = new Store(import.meta.env.VITE_APP_STORAGE_FILE)
     }
 
-    async setItem(key: string, value: any) {
+    async setItem(key: string, value: unknown) {
         if (!key) {
             return
         }
@@ -20,7 +20,7 @@ export class NativeStoreService {
         }
     }
 
-    async removeItem(key: StorageServiceKeyOrKeyResolver) {
+    async removeItem(key: string) {
         try {
             await this.store.delete(key)
         } catch (error) {
