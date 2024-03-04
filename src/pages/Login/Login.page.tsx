@@ -17,16 +17,6 @@ export const LoginPage: React.FC = () => {
             <div className="Login-Form">
                 <button onClick={onSubmit}>Login</button>
             </div>
-            <video
-                className="Login-Video"
-                muted={true}
-                autoPlay={true}
-                loop={true}
-                src={'/login.mp4'}
-                style={{
-                    borderRadius: `${import.meta.env.VITE_APP_BORDER_RADIUS}px`
-                }}
-            />
         </PageLayout>
     )
 }

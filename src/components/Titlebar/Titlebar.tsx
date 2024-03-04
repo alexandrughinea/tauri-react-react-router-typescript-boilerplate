@@ -21,15 +21,9 @@ export const Titlebar: React.FC = () => {
                 borderTopLeftRadius: `${import.meta.env.VITE_APP_BORDER_RADIUS}px`,
                 borderTopRightRadius: `${import.meta.env.VITE_APP_BORDER_RADIUS}px`
             }}>
-            <div className="Titlebar-Button" onClick={onMinimize}>
-                _
-            </div>
-            <div className="Titlebar-Button" onClick={onMaximize}>
-                [ ]
-            </div>
-            <div className="Titlebar-Button" onClick={onClose}>
-                X
-            </div>
+            <div className="Titlebar-Button Other" onClick={onMinimize} />
+            <div className="Titlebar-Button Other" onClick={onMaximize} />
+            <div className="Titlebar-Button Close" onClick={onClose} />
         </div>
     )
 }
